@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>Солнечная электростанция</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -458,8 +458,25 @@
         <div class="footer__top">
           <form class="footer__form">
             <h2 class="footer__title">ОСТАВИТЬ ЗАЯВКУ</h2>
-            <input type="text" class="footer__input" placeholder="Имя" />
-            <input type="tel" class="footer__input" placeholder="Телефон" />
+
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="project_name" value="Solar" />
+            <input type="hidden" name="admin_email" value="zhakevichv@ya.ru" />
+            <input type="hidden" name="form_subject" value="Form" />
+            <!-- END Hidden Required Fields -->
+
+            <input
+              name="Имя"
+              class="footer__input"
+              type="text"
+              placeholder="Имя"
+            />
+            <input
+              name="Телефон"
+              class="footer__input"
+              type="tel"
+              placeholder="Телефон"
+            />
             <button class="footer__form-btn button">
               <svg
                 width="101"
